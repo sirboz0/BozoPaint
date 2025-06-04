@@ -36,10 +36,11 @@ int main()
 	InitWindow(1600, 1200, "Bozo paint");
 
 	
+	//const char* file = tinyfd_openFileDialog("Load Image", "", 0, nullptr, nullptr, 0); include this lib to load images from file explorer.
 	
-	
-	
-	Texture2D backGroundImage = LoadTexture("path to selected saved image");
+	Image image = LoadImage("selected image file");
+	Texture2D backGroundImage = LoadTexture("path to selected saved image");// its here for now
+	backGroundImage = LoadTextureFromImage(image);
 
 	while (!WindowShouldClose()) {
 		BeginDrawing();
@@ -60,7 +61,7 @@ int main()
 		
 		
 
-		DrawTextureEx(backGroundImage, {0, 0}, 0.0f, 100.0f, WHITE);// draw saved background image(the loaded save image).
+		DrawTextureEx(backGroundImage, {0, 0}, 0.0f, 100.0f, WHITE);// draw saved background image(the loaded save image)(still not added).
 		
 
 		EndDrawing();
@@ -69,7 +70,7 @@ int main()
 
 }
 
-void readyPaint()
+void readyPaint()// checks if user pressing left mouse button to paint 
 {
 	if (IsMouseButtonDown(MOUSE_BUTTON_LEFT) && canPaint) {
 		Vector2 mousePos = GetMousePosition();

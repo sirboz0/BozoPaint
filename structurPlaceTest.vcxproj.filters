@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="structurPlaceTest.cpp">
+    <ClCompile Include="bozoPaint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PaintDrop.cpp">

@@ -24,6 +24,7 @@
     <ProjectGuid>{c657aaa5-739c-4b2a-bef8-1454806176f5}</ProjectGuid>
     <RootNamespace>structurPlaceTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BozoPaint</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -133,7 +134,7 @@
   <ItemGroup>
     <ClCompile Include="PaintDrop.cpp" />
     <ClCompile Include="PaintDropsManager.cpp" />
-    <ClCompile Include="structurPlaceTest.cpp" />
+    <ClCompile Include="bozoPaint.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PaintDrop.h" />
